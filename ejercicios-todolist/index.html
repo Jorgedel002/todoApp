@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main class="main-container">
+        <header>
+            <h1>TODO LIST</h1>
+        </header>
+        <div class="modal bg-opacity" id="modal">
+            <div class="modal-add">
+                <h1>Agrega una tarea</h1>
+                <div class="input-container">
+                    <label for="task-input">Escriba su tarea</label>
+                    <input type="text" class="input-jd" id="taskInput">
+                </div>
+                <div class="buttons-container">
+                    <button class="btn-custom non-background" id="close">CANCELAR</button>
+                    <button class="btn-custom" id="addTask">AGREGAR</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="todo-container" id="todoContainer">
+            <div class="btn-container">
+                <button class="btn-custom btn-rounded" id="btnAdd">+</button>
+            </div>
+            <div class="task-container task-flex" id="taskContainer">
+                <span class="no-task" id="noTasks">No hay tareas, agrega una con el boton <button class="btn-chico">+</button> :)</span>
+            </div>
+        </div>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
