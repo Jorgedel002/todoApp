@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(){
         tasks.map(function(task, i){
             let taskElement = document.createElement("div");
             taskElement.classList.add("task");
-            taskElement.innerHTML = "<div>#"+i+"</div>" +" "+ task.nombreTarea;
+            taskElement.innerHTML = "<div>#"+i+"</div>" +" "+ `<div  class='task-icons-container'>${task.nombreTarea} <div class='icon-container'> <div><i class='fa-solid fa-trash'></i></div> <div><i class='fa-solid fa-pen'></i></div> </div></div>`;
             
             console.log(i)
             
