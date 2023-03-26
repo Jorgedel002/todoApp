@@ -106,19 +106,15 @@ header{
 
 .task{
     display: flex;
-    padding: 20px;
+    padding: 10px 20px;
+    align-items: center;
     border-bottom: 1px solid #dbdbdb;
     font-weight: 500;
     cursor: pointer;
 }
 
-.task:hover{
-    background-color: #e2e2e2;
-}
-
 .task div{
     font-weight: 800;
-    margin-right: 10px;
 }
 
 .task-flex{
@@ -211,8 +207,55 @@ header{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    margin-left: 10px;
 }
 
 .icon-container{
     display: flex;
+}
+
+.check-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 40px;
+    border: 1px solid #dbdbdb;
+    margin-right: 10px;
+}
+
+.fa-check{
+    color: white;
+}
+
+.active{
+    background-color: rgb(33, 180, 33);
+}
+
+.check-container:hover{
+    border-color: rgb(33, 180, 33);
+    border-width: 2px;
+}
+
+.fa-trash{
+    margin-right: 15px;
+    color: red;
+}
+
+.fa-pen{
+    color: rgb(134, 255, 134);
+}
+
+.first-div{
+    width: 40px;
+    height: 20px;
+}
+
+.void-input{
+    border-color: red;
+}
+
+.void-input::placeholder{
+    color: red;
 }
